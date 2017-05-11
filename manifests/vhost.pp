@@ -19,4 +19,13 @@ define nginx::vhost(
     group   => $group,
     notify  => Service['nginx_service'],
   }
+
+  file { "$vhost_docroot": 
+    ensure => directory,
+    owner  => $owner,
+    group  => $group,
+    mode   => '0775',
+  }
+
+
 }
