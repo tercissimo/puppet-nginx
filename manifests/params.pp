@@ -29,7 +29,7 @@ class nginx::params {
   $service_ensure = 'running'
   $service_pattern = 'nginx'
   $service_enable = true
-  $service_hassstatus = true
+  $service_hasstatus = true
   $service_hasrestart = true
 
   $docroot = '/usr/share/nginx'
